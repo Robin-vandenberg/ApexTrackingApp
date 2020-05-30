@@ -1,0 +1,7 @@
+{
+  "name": "ApexTrackingApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
