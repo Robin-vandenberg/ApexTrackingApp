@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApexApiService } from '../services/apex-api-service.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
-
+  constructor(private apexApiService: ApexApiService) {
+    apexApiService.getPlayerData().subscribe(data => {
+      console.log(data);
+    });
+  }
 }
